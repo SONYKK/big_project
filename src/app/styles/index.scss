@@ -1,7 +1,7 @@
-@import "src/app/styles/reset";
-@import "src/app/styles/themes/dark";
-@import "src/app/styles/themes/normal";
-@import "src/app/styles/variables/global";
+@import "./reset";
+@import "./themes/dark";
+@import "./themes/normal";
+@import './variables/global';
 
 
 .app {
@@ -11,4 +11,18 @@
   color: var(--primary-color);
 
   min-height: 100vh;
+}
+
+.svg {
+  height: 50px;
+  width: 50px;
+}
+
+.content-page {
+  display: flex;
+}
+
+.page-wrapper {
+  flex-grow: 1;
+  padding: 20px;
 }
