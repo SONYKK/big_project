@@ -1,5 +1,8 @@
 {
   "Главная страница": "Main page",
   "Язык": "Language",
-  "новый текст": "some text"
+  "новый текст": "some text",
+  "Страница не найдена": "Page not found",
+  "Произошла неизвестная ошибка": "Undefined error occurred",
+  "Обновить страницу": "Update page"
 }
