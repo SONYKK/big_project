@@ -22,5 +22,6 @@ declare module '*.jpg' ;
 declare module '*.jpeg' ;
 declare module '*.png' ;
 declare module '*.gif' ;
+declare module 'webpack-bundle-analyzer';
 
 declare const __IS_DEV__: boolean
