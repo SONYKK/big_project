@@ -8,29 +8,29 @@ on:
     type-check:
       runs-on: ubuntu-latest
       strategy:
-  matrix:
-    node-version: [ 17.x ]
+        matrix:
+          node-version: [ 17.x ]
       steps:
         - name: Checkout Commit
-        uses: actions/checkout@v2
+          uses: actions/checkout@v2
         - name: Use Node.js ${{ matrix.node }}
-        uses: actions/setup-node@v1
+          uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
         - name: install modules
-        run: npm install
+          run: npm install
         - name: Check types
-        run: npm run lint:ts
+          run: npm run lint:ts
         unit-test:
           runs-on: ubuntu-latest
           strategy:
             matrix:
-            node-version: [ 17.x ]
+              node-version: [ 17.x ]
           steps:
             - name: Checkout Commit
-            uses: actions/checkout@v2
+              uses: actions/checkout@v2
             - name: Use Node.js ${{ matrix.node }}
-            uses: actions/setup-node@v1
+              uses: actions/setup-node@v1
             with:
               node-version: ${{ matrix.node }}
             - name: linting css
@@ -39,13 +39,13 @@ on:
           runs-on: ubuntu-latest
           strategy:
             matrix:
-            node-version: [ 17.x ]
+              node-version: [ 17.x ]
           needs: [ type-check, unit-test ]
           steps:
             - name: Checkout Commit
-            uses: actions/checkout@v2
+              uses: actions/checkout@v2
             - name: Use Node.js ${{ matrix.node }}
-            uses: actions/setup-node@v1
+              uses: actions/setup-node@v1
             with:
               node-version: ${{ matrix.node }}
             - name: build production project
