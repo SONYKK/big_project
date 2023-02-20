@@ -1,8 +1,15 @@
 {
+  "Тестовый пример": "Test example",
+  "Перевод": "Translate",
   "Главная страница": "Main page",
-  "Язык": "Language",
-  "новый текст": "some text",
+  "Язык": "English",
+  "новый перевод": "новый перевод",
   "Страница не найдена": "Page not found",
-  "Произошла неизвестная ошибка": "Undefined error occurred",
-  "Обновить страницу": "Update page"
+  "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
+  "Обновить страницу": "Reload page",
+  "throw error": "throw error",
+  "Главная": "Main",
+  "О сайте": "About us",
+  "('toggle')": "('toggle')",
+  "('Set collapsed')": "('Set collapsed')"
 }

@@ -1,4 +1,7 @@
-import ErrorBoundary from "./ui/ErrorBoundary";
+import ErrorBoundary from './ui/ErrorBoundary';
+import { BugButton } from './ui/BugButton';
 
-export {ErrorBoundary, };
-
+export {
+  ErrorBoundary,
+  BugButton,
+};
