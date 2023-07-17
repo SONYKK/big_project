@@ -1,1 +1,1 @@
-export { PageLoader } from 'widgets/PageLoader/ui/PageLoader';
+export { PageLoader } from './ui/PageLoader/PageLoader';

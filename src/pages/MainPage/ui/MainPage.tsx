@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Input } from 'shared/ui/Input/Input';
+import { Page } from '@/widgets/Page';
 
 const MainPage = () => {
     const { t } = useTranslation();
@@ -11,9 +11,10 @@ const MainPage = () => {
     };
 
     return (
-        <div>
+        <Page data-testid="MainPage">
+            <div>123123123123123123</div>
             {t('Главная страница')}
-        </div>
+        </Page>
     );
 };
 
